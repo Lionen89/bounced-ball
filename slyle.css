@@ -15,7 +15,7 @@ body {
   left: calc(50% - 55px / 2);
 }
 .ball__field {
-  height: 516px;
+  height: 416px;
   width: 100%;
   border-bottom: 5px black groove;
   position: relative;

@@ -22,7 +22,7 @@ function animate() {
     const wave = Math.cos(timeFraction / (200 - timeFraction / 30));
     ball.style.top = ground - Math.abs(wave) * progress + 'px';
 
-    if (ground - Math.abs(wave) * progress > 443) {
+    if (ground - Math.abs(wave) * progress > 343) {
       counter++;
     }
     console;
