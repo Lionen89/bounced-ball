@@ -26,10 +26,10 @@ function animate() {
       counter++;
     }
     if (counter < 20) {
-      requestAnimationFrame(bounce);
+      window.requestAnimationFrame(bounce);
     } else {
       ball.style.top = ground + 'px';
-      cancelAnimationFrame(requestId);
+      window.cancelAnimationFrame(requestId);
     }
   }
 }
