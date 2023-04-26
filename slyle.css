@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.ball {
+  border-radius: 50%;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  background-image: url('https://js.cx/clipart/ball.svg');
+  background-size: contain;
+  top: 0;
+  left: calc(50% - 55px / 2);
+}
+.ball__field {
+  height: 55vh;
+  width: 100%;
+  border-bottom: 5px black groove;
+  position: relative;
+}
+.ball__button {
+  background: inherit;
+  margin: 30px auto 0;
+  min-height: 50px;
+  min-width: 200px;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  cursor: pointer;
+}
