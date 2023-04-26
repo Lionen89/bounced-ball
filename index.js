@@ -19,12 +19,13 @@ function animate() {
   function bounce() {
     const timeFraction = Date.now() - start;
     progress *= 0.97;
-    const wave = Math.cos(timeFraction / (300 - timeFraction / 60));
+    const wave = Math.cos(timeFraction / (200 - timeFraction / 30));
     ball.style.top = ground - Math.abs(wave) * progress + 'px';
 
     if (ground - Math.abs(wave) * progress > 443) {
       counter++;
     }
+    console;
     if (counter < 20) {
       window.requestAnimationFrame(bounce);
     } else {
